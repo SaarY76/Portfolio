@@ -1,0 +1,548 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#education_headline:target::before {
+  content: "";
+  display: block;
+  height: 190px; /* This value determines how much further down the screen will move. Adjust as needed. */
+  margin: -50px 0 0; /* Negative margin of the same value as height to offset the position */
+  visibility: hidden;
+}
+
+#skills_headline:target::before {
+  content: "";
+  display: block;
+  height: 120px; /* This value determines how much further down the screen will move. Adjust as needed. */
+  margin: -50px 0 0; /* Negative margin of the same value as height to offset the position */
+  visibility: hidden;
+}
+
+body {
+  margin: 0; /* Add this to remove the default margin from the body */
+  background-color: white;
+  min-height: 100vh; /* Minimum height of viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-family: cursive;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  position: fixed;
+  top: 0; /* Aligns the header to the top of the viewport */
+  left: 0; /* Aligns the header to the left of the viewport */
+  right: 0;
+  width: 100%; /* Ensures the header spans the full width of the viewport */
+  z-index: 1000; /* Places the header above other elements */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+#profile_image {
+  width: 270px;
+  height: 270px;
+  border-radius: 220px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#ul_header {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+#ul_header a {
+  text-decoration: none;
+  color: black;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+article {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 80px;
+  font-size: 0.9rem;
+}
+
+article p {
+  margin: 0;
+  padding: 0;
+}
+
+#projects_headline {
+  margin-top: 20px;
+}
+
+#about_headline {
+  margin-bottom: 20px;
+}
+
+#about {
+  margin-bottom: 150px;
+}
+
+h1 {
+  padding-top: 70px; /* Adjust based on the height of your fixed header */
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 70px; /* Adjust based on the height of your fixed header */
+  margin-top: -70px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#friends_to_meet_div {
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This creates 3 equal columns */
+  margin-top: 20px;
+  gap: 20px; /* Gap between grid items */
+  width: max-content;
+  margin: 20px auto;
+  margin-bottom: 120px;
+}
+
+.friends_to_meet_div_img {
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative; /* Added */
+  width: 350px;
+  height: 550px;
+  margin: 20px;
+  overflow: hidden; /* Ensures that the overlay doesn't overflow */
+}
+
+.friends_to_meet_img {
+  display: block; /* Removes default margin of img */
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%; /* Limits text width to not take the full width */
+}
+
+.friends_to_meet_div_img:hover .overlay-text {
+  display: block;
+}
+
+.friends_to_meet_div_img:hover .friends_to_meet_img {
+  opacity: 0.7; /* Optional, for added effect */
+}
+
+#grades_monitor_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  gap: 20px; /* Gap between grid items */
+  width: max-content; /* Ensures the grid container doesn't take up more space than it needs */
+  margin: 20px auto; /* Top and bottom margin set to 20px and left/right set to auto */
+  margin-bottom: 270px;
+}
+
+#football_teams_genrator_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This creates 3 equal columns */
+  margin-top: 20px;
+  gap: 20px; /* Gap between grid items */
+  width: max-content;
+  margin: 20px auto;
+  margin-bottom: 270px;
+}
+
+.grades_monitor_img {
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  overflow: hidden; /* Ensures that the overlay doesn't overflow */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.div_skills {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 270px;
+  padding: 0;
+}
+
+#skills_headline {
+  margin-bottom: 25px;
+}
+
+.div_skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+.div_skills ul div {
+  display: flex;
+  font-weight: bold;
+  margin: 30px;
+  padding: 0;
+}
+
+.div_skills ul div li {
+  margin-left: 10px;
+}
+
+#article_education li {
+  font-size: 0.95rem;
+}
+
+#article_education p {
+  margin: 10px;
+  margin-left: -2px;
+  color: rgb(158, 156, 156);
+  font-size: 0.82rem;
+}
+
+#contact_headline {
+  margin-bottom: 30px;
+  margin-top: 250px;
+}
+
+#article_contact {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+#article_contact div {
+  display: flex;
+  justify-items: center;
+  margin: 20px;
+}
+
+#article_contact img {
+  margin-right: 20px;
+}
+
+#linkedin_div img {
+  margin-bottom: 5px;
+}
+
+#article_contact p {
+  margin-top: 5px;
+}
+
+#article_contact a {
+  margin-top: 5px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as required */
+  background-color: #51d2de; /* Choose your desired background color */
+  color: #ffffff; /* Text color */
+  border: none; /* Removes any default border */
+  text-align: center;
+  text-decoration: none; /* Removes the underline from the link */
+  font-size: 16px; /* Adjust font size as required */
+  margin: 4px 2px;
+  cursor: pointer; /* Makes it look clickable */
+  border-radius: 4px; /* Gives rounded corners. Adjust or remove if you want */
+  transition: background-color 0.3s; /* Optional: Smooth background color transition for hover effect */
+  margin-bottom: 350px;
+}
+
+.button-link:hover {
+  background-color: #40a9b3; /* Darker shade for hover effect */
+}
+
+#div_diploma {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This creates 3 equal columns */
+  margin-top: 20px;
+  gap: 20px; /* Gap between grid items */
+  width: max-content;
+  margin: 20px auto;
+  margin-bottom: 250px;
+}
+
+.education_img {
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  overflow: hidden; /* Ensures that the overlay doesn't overflow */
+}
+
+.education_img:hover {
+  cursor: pointer;
+}
+
+/* Modal background */
+#imgModal {
+  display: none;
+  /* Other styling properties */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  display: block;
+  width: auto; /* Allows the image to maintain its aspect ratio */
+  max-width: 60%; /* Adjust this as needed to prevent the image from being too wide */
+  max-height: 90vh; /* Allows the image to use more of the vertical space */
+  object-fit: contain; /* Ensures the image fits within the bounds without stretching */
+  transition: transform 0.25s ease; /* Smooth transition for zoom */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Adds a shadow for better visibility */
+}
+
+/* Close Button */
+#closeModal {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Responsive styling begins here */
+
+/* Breakpoints */
+/* You can adjust these as needed, but 768px is a common breakpoint for tablets and phones */
+@media only screen and (max-width: 768px) {
+  #imgModal {
+    padding-top: 50%; /* Minimize padding to maximize image size */
+  }
+
+  * {
+    font-size: 0.6rem; /* Adjusting the base font size for mobile */
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Style the unordered list inside the header */
+  #ul_header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* You can adjust this value based on your design needs */
+    list-style-type: none; /* This removes the default bullet points of the ul */
+    padding: 0; /* This removes the default padding of the ul */
+  }
+
+  #ul_header li a {
+    font-family: "Times New Roman", Times, serif;
+    padding: 8px;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+
+  #profile_image {
+    width: 220px;
+    height: 220px;
+    border-radius: 250px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  article {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  #friends_to_meet_div,
+  #grades_monitor_div,
+  #football_teams_genrator_div,
+  #div_diploma {
+    grid-template-columns: 1fr; /* Stacks items vertically */
+    margin: 20px 0;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 200px;
+  }
+
+  .friends_to_meet_div_img,
+  .grades_monitor_img,
+  .education_img,
+  .exchange_rates_img {
+    width: 90%; /* Take up most of the screen width */
+    margin: 10px auto; /* Horizontal centering */
+    margin-bottom: 30px;
+  }
+
+  .div_skills {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .div_skills ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .div_skills ul li {
+    padding: 0;
+    margin: auto;
+  }
+
+  .div_skills ul div {
+    margin: 10px;
+    padding: 0;
+  }
+
+  #education_headline {
+    margin-top: 180px;
+  }
+
+  #article_contact {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: start;
+  }
+
+  #article_contact div {
+    margin-left: 60px;
+  }
+
+  #article_contact img {
+    margin-right: 10px; /* Reduce the right margin for the icon */
+  }
+
+  #article_contact p {
+    font-size: 0.7rem;
+    margin-top: 5px;
+  }
+
+  #article_contact a {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+
+  #article_education {
+    text-align: center; /* Center aligns the text */
+    margin-left: auto; /* Aligns the block element to the center */
+    margin-right: auto; /* Aligns the block element to the center */
+    width: 80%; /* Sets the width to 80% for better aesthetics, can be adjusted */
+  }
+
+  #article_education ul {
+    list-style: none; /* Removes bullet points */
+    padding-left: 0; /* Removes the default padding from the unordered list */
+  }
+
+  #article_education li {
+    font-size: 0.6rem;
+    margin-bottom: 1rem; /* Adds some space between list items */
+  }
+
+  #article_education li p {
+    font-size: 0.6rem;
+  }
+
+  .button-link {
+    margin-bottom: 250px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}

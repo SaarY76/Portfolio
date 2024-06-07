@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Saar Yaniv Portfolio</title>
+  </head>
+  <header>
+    <ul id="ul_header">
+      <li><a href="#first_h1">About</a></li>
+      <li><a href="#projects_headline">Projects</a></li>
+      <li><a href="#skills_headline">Skills</a></li>
+      <li><a href="#education_headline">Education</a></li>
+      <li><a href="#contact_headline">Contact</a></li>
+    </ul>
+  </header>
+  <body>
+    <h1 id="first_h1">Saar Yaniv Portfolio</h1>
+    <img src="./images/Saar.jpeg" alt="saar image" id="profile_image" />
+    <h2 id="about_headline">About</h2>
+    <article id="about" class="fade-in">
+      <p>
+        Hello, my name is Saar Yaniv, I'm <span id="age_span"></span> years old, and I live in Haifa.
+      </p>
+      <br />
+      <p>
+        I studied Practical Software Engineering at The National School of
+        Practical Software Engineering at The Technion.
+      </p>
+      <br />
+      <p>
+        From the first leason I liked the idea that Coding is like a game that
+        we need to go up in levels and solve problems to get to the end result.
+      </p>
+      <br />
+      <p style="font-weight: bold">Characteristics :</p>
+      <br />
+      <p>
+        - I'm a self-learner, with a lot of motivation, and excellent at working
+        in a team and alone.
+      </p>
+      <p>
+        - I like to find problems in my everyday life and try to solve them by
+        building new Projects that will solve them.
+      </p>
+    </article>
+    <h2 id="projects_headline">Projects</h2>
+    <article id="projects" class="fade-in">
+      <h3>Android app for meeting new friends</h3>
+      <p>
+        An App for meeting new friends based on shared interests and living
+        area, by using Firebase's real-time database for chat and for the data
+        stored.
+      </p>
+      <p>This Project is for my final Project, during my studies.</p>
+    </article>
+    <div id="friends_to_meet_div" class="fade-in">
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/login.jpeg"
+          alt="friends_to_meet_login"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Login Screen</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/registration1.jpeg"
+          alt="friends_to_meet_registration"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Registration Screen</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/connections.jpeg"
+          alt="friends_to_meet_connections"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Connections Screen</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/other_profile.jpeg"
+          alt="friends_to_meet_other_profile"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Other User Profile</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/chats.jpeg"
+          alt="friends_to_meet_chats"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Chats Screen</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/chat.jpeg"
+          alt="friends_to_meet_chat"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Chat Screen</span>
+      </div>
+    </div>
+    <h3>Android app for getting notifications when a new grade was uploaded</h3>
+    <article class="fade-in">
+      <p>
+        An app that sends push messages when a new grade is uploaded to the
+        School's website because my school doesn't have that functionality.
+      </p>
+      <p>
+        I used for building this app, web scapping to enter my School's website
+        and a service that runs every 10 minutes,
+      </p>
+      <p>
+        and checks if a new grade was uploaded and if so it creates a
+        notification and notify my phone.
+      </p>
+    </article>
+    <div id="grades_monitor_div" class="fade-in">
+      <div class="grades_monitor_img">
+        <img
+          src="./images/grades_monitor_services.jpeg"
+          alt=""
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Login Screen</span>
+      </div>
+      <div class="grades_monitor_img">
+        <img
+          src="./images/grades_monitor_notification.jpeg"
+          alt=""
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Registration Screen</span>
+      </div>
+    </div>
+    <h3>Android app for Currency exchange</h3>
+    <article class="fade-in">
+      <p>
+        The app fetches currency data relative to the Euro from an API called
+        Exchangerates.io upon launch, and I use this data to calculate the
+        exchange rates between two currencies.
+      </p>
+    </article>
+    <div id="grades_monitor_div" class="fade-in">
+      <div class="exchange_rates_img">
+        <img
+          src="./images/exchange_rates_1.jpeg"
+          alt=""
+          class="grades_monitor_img"
+        />
+        <span class="overlay-text">Login Screen</span>
+      </div>
+      <div class="exchange_rates_img">
+        <img
+          src="./images/exchange_rates_spinner.jpeg"
+          alt=""
+          class="grades_monitor_img"
+        />
+        <span class="overlay-text">Registration Screen</span>
+      </div>
+    </div>
+    <h3>Android app Genrating Teams by ratings</h3>
+    <article class="fade-in">
+      <p>
+        The app let's you to create a list of players with a name and rating for
+        each between 1 to 10. The user will get the option to choose how to
+        divide the list players to teams, and by an algorithm it will generate
+        the most equal rating teams.
+      </p>
+    </article>
+    <div id="football_teams_genrator_div" class="fade-in">
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/ftg_players_list.jpeg"
+          alt="football_teams_genrator_players_list"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Players list creation</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/ftg_teams_divider.jpeg"
+          alt="football_teams_genrator_teams_divider"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Teams divider chooser</span>
+      </div>
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/ftg_teams_show.jpeg"
+          alt="football_teams_genrator_teams_show"
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Teams showing </span>
+      </div>
+    </div>
+    <h2 id="skills_headline">Skills</h2>
+    <div class="div_skills">
+      <ul>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>JAVA</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Kotlin</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>C#</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>OOP</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Android Development</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Javascript</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>HTML & CSS</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Python</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Unit Testing</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>MySQL</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>Firebase</li>
+        </div>
+        <div>
+          <img
+            src="./images/achivement.png"
+            alt=""
+            width="30"
+            height="30"
+            class="fade-in"
+          />
+          <li>MongoDB</li>
+        </div>
+      </ul>
+    </div>
+    <h2 id="education_headline">Education</h2>
+    <article id="article_education" class="fade-in">
+      <ul>
+        <li>
+          Practical Software Engineer at The National School of Practical
+          Software Engineering at The Technion, Haifa
+          <p>October 2021 - June 2023</p>
+        </li>
+
+        <li>
+          Matriculation certificate at Hamoshava High School, Zichron Yaakov
+          <p>September 2012 - June 2016</p>
+        </li>
+      </ul>
+    </article>
+    <div id="div_diploma">
+      <img
+        class="education_img fade-in"
+        src="./images/diploma.png"
+        alt="grades_diploma"
+      />
+      <img
+        class="education_img fade-in"
+        src="./images/grades.png"
+        alt="grades_diploma"
+      />
+      <img
+        class="education_img fade-in"
+        src="./images/grades_mahat.png"
+        alt="grades_diploma"
+      />
+    </div>
+    <!-- Modal for displaying the enlarged image -->
+    <div id="imgModal">
+      <span
+        id="closeModal"
+        style="
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #fff;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        class="modal-content"
+        id="enlargedImage"
+        style="margin: auto; display: block; width: 80%; max-width: 700px"
+      />
+    </div>
+    <h2 id="contact_headline">Contact</h2>
+    <article id="article_contact" class="fade-in">
+      <div id="linkedin_div">
+        <img
+          src="./images/linkedin.png"
+          alt="LinkedIn Logo"
+          width="35"
+          height="35"
+        />
+        <a href="https://www.linkedin.com/in/saar76yaniv" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+      <div id="email_div">
+        <img src="./images/email.png" alt="email Logo" width="33" height="33" />
+        <p>saar2976@gmail.com</p>
+      </div>
+      <div id="phone_div">
+        <img src="./images/phone.png" alt="phone Logo" width="33" height="33" />
+        <p>054-3552344</p>
+      </div>
+    </article>
+    <a
+      href="./Saar Yaniv - Junior Practical Software Engineer.pdf"
+      class="button-link"
+      target="_blank"
+      >Download CV</a
+    >
+  </body>
+  <footer>
+    <p>© All rights reserved to Saar Yaniv</p>
+  </footer>
+  <script src="./index.js"></script>
+</html>
