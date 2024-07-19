@@ -80,6 +80,11 @@ window.onload = function () {
   document.getElementById("age_span").textContent = calculateAge("1998-03-08");
 };
 
+// Clearing form fields when the page loads
+window.addEventListener("load", function () {
+  document.getElementById("contactForm").reset();
+});
+
 // Initial check
 checkVisibility();
 

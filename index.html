@@ -121,22 +121,30 @@
         notification and notify my phone.
       </p>
     </article>
-    <div id="grades_monitor_div" class="fade-in">
-      <div class="grades_monitor_img">
+    <div id="football_teams_genrator_div" class="fade-in">
+      <div class="friends_to_meet_div_img">
         <img
-          src="./images/grades_monitor_services.jpeg"
+          src="./images/grades_monitor_login.jpeg"
           alt=""
           class="friends_to_meet_img"
         />
         <span class="overlay-text">Login Screen</span>
       </div>
-      <div class="grades_monitor_img">
+      <div class="friends_to_meet_div_img">
+        <img
+          src="./images/grades_monitor_services.jpeg"
+          alt=""
+          class="friends_to_meet_img"
+        />
+        <span class="overlay-text">Start and stop service Screen</span>
+      </div>
+      <div class="friends_to_meet_div_img">
         <img
           src="./images/grades_monitor_notification.jpeg"
           alt=""
           class="friends_to_meet_img"
         />
-        <span class="overlay-text">Registration Screen</span>
+        <span class="overlay-text">Grade notification</span>
       </div>
     </div>
     <h3>Android app for Currency exchange</h3>
@@ -221,7 +229,7 @@
             height="30"
             class="fade-in"
           />
-          <li>Kotlin</li>
+          <li>Manual testing</li>
         </div>
         <div>
           <img
@@ -409,6 +417,23 @@
         <p>054-3552344</p>
       </div>
     </article>
+    <!-- This is a from that a user can send email to my email using the Formspree API-->
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/mzzpznwy"
+      method="POST"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
     <a href="./Saar Yaniv Resume.pdf" class="button-link" target="_blank"
       >Download CV</a
     >
